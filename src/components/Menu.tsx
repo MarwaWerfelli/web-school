@@ -1,4 +1,4 @@
-// import { currentUser } from "@clerk/nextjs/server";
+// import { currentUser } from "@clerk/nextjs/server";  //TODO
 import Image from "next/image";
 import Link from "next/link";
 
@@ -118,8 +118,8 @@ const menuItems = [
 ];
 
 const Menu = async () => {
-  const user = { publicMetadata: { role: "student" } };
-  // await currentUser();
+  const user = { publicMetadata: { role: "student" } }; //TODO remove
+  // await currentUser(); //TODO
   const role = user?.publicMetadata.role as string;
   return (
     <div className="mt-4 text-sm">

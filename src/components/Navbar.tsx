@@ -1,10 +1,10 @@
-// import { UserButton } from "@clerk/nextjs";
-// import { currentUser } from "@clerk/nextjs/server";
+// import { UserButton } from "@clerk/nextjs";  //TODO
+// import { currentUser } from "@clerk/nextjs/server";  //TODO
 import Image from "next/image";
 
 const Navbar = async () => {
-  //   const user = await currentUser();
-  const user = { publicMetadata: { role: "student" } };
+  //   const user = await currentUser();  //TODO
+  const user = { publicMetadata: { role: "student" } }; //TODO remove
   return (
     <div className="flex items-center justify-between p-4">
       {/* SEARCH BAR */}
