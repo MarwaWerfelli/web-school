@@ -14,12 +14,12 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        lamaSky: "#C3EBFA", //TODO
-        lamaSkyLight: "#EDF9FD", //TODO
-        lamaPurple: "#CFCEFF", //TODO
-        lamaPurpleLight: "#F1F0FF", //TODO
-        lamaYellow: "#FAE27C", //TODO
-        lamaYellowLight: "#FEFCE8", //TODO
+        costumSky: "#C3EBFA",
+        costumSkyLight: "#EDF9FD",
+        costumPurple: "#CFCEFF",
+        costumPurpleLight: "#F1F0FF",
+        costumYellow: "#FAE27C",
+        costumYellowLight: "#FEFCE8",
       },
     },
   },

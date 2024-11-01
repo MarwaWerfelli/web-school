@@ -1,23 +1,20 @@
-// import prisma from "@/lib/prisma";
+import prisma from "@/lib/prisma";
 
 const EventList = async ({ dateParam }: { dateParam: string | undefined }) => {
   const date = dateParam ? new Date(dateParam) : new Date();
 
-  const data = [
-    { id: "0", title: "title", startTime: new Date(), description: "desc" },
-  ];
-  // const data = await prisma.event.findMany({
-  //   where: {
-  //     startTime: {
-  //       gte: new Date(date.setHours(0, 0, 0, 0)),
-  //       lte: new Date(date.setHours(23, 59, 59, 999)),
-  //     },
-  //   },
-  // });
+  const data = await prisma.event.findMany({
+    where: {
+      startTime: {
+        gte: new Date(date.setHours(0, 0, 0, 0)),
+        lte: new Date(date.setHours(23, 59, 59, 999)),
+      },
+    },
+  });
 
   return data.map((event) => (
     <div
-      className="p-5 rounded-md border-2 border-gray-100 border-t-4 odd:border-t-lamaSky even:border-t-lamaPurple"
+      className="p-5 rounded-md border-2 border-gray-100 border-t-4 odd:border-t-costumSky even:border-t-costumPurple"
       key={event.id}
     >
       <div className="flex items-center justify-between">
