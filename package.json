@@ -1,6 +1,9 @@
 {
   "name": "web_school_management_app",
   "version": "0.1.0",
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,6 +13,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
+    "@prisma/client": "^5.21.1",
     "autoprefixer": "^10.4.20",
     "moment": "^2.30.1",
     "next": "14.2.5",
@@ -21,6 +25,7 @@
     "react-hook-form": "^7.53.1",
     "react-toastify": "^10.0.6",
     "recharts": "^2.13.2",
+    "ts-node": "^10.9.2",
     "zod": "^3.23.8"
   },
   "devDependencies": {
