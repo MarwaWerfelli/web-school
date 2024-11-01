@@ -148,7 +148,7 @@ const FormModal = ({
         </button>
       </form>
     ) : type === "create" || type === "update" ? (
-      forms[table](setOpen, type, data, relatedData)
+      forms?.[table](setOpen, type, data, relatedData)
     ) : (
       "Form not found!"
     );
